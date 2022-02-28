@@ -8,7 +8,10 @@ import Events from './pages/Events';
 import './styles.scss'
 import Background from "./components/Background";
 import {useState, useEffect} from 'react'
-
+import Login from "./pages/Login";
+import Register from "./pages/Register";
+import Profile from "./pages/Profile";
+import AuthService from "./services/auth.service";
 
 
 
@@ -38,6 +41,9 @@ useEffect(() => {
           <Route path ='/About' element={<About />} />
           <Route path ='/Contact' element={<Contact/>} />
           <Route path ='/Events' element={<Events/>} />
+          <Route path ='/Login' element={<Login/>} />
+          <Route path ='/Register' element={<Register/>} />
+          <Route path ='/Profile' element={<Profile/>} />
         </Routes>
     </div>
   );
